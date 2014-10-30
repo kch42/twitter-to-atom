@@ -102,7 +102,7 @@ func (t Tweet) Atomify() *atom.Entry {
 	entry := new(atom.Entry)
 
 	entry.Title = "@" + t.From + ": " + t.Content
-	if len(entry.Title) > titlelimit {
+	if len([]rune(entry.Title)) > titlelimit {
 		entry.Title = string([]rune(entry.Title)[:titlelimit-2]) + " …"
 	}
 
