@@ -8,7 +8,7 @@ Installation / Building
 
 You need to have the Go programming language installed. After that, installing is as simple as
 
-	go get github.com/kch42/twitter-to-atom
+	go get github.com/silvasur/twitter-to-atom
 
 Usage
 -----
